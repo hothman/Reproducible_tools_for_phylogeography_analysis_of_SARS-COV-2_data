@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=mafft_afric
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=ziedbouslama80@gmail.com
+#SBATCH --output=mafft_afric.log
+
+module load anaconda/anaconda3
+conda create -n phygecov python=3.6
+conda activate phygecov
+conda install iqtree=2.1.2 -c bioconda
+
+iqtree -s mafft_africa.fasta -m MFP -bb 100
+
+
+
+
