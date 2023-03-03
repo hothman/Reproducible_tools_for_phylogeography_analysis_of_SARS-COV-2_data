@@ -10,12 +10,17 @@ library(BiocManager)
 BiocManager::install("treeio")
 
 
-# Sars-Cov-2 
+
+# sars cov 2 Data  Hackathon
 
 library(Rlsd2)
-result <- lsd2(inputTree="/path_to_tree_file/myfile.treefile", 
-               inputDate="/path_to_metadata_file/my_date_file.tsv", 
+result <- lsd2(inputTree="Documents/hackathon_2020/mist_4/nCov_mafft_v1.fasta.treefile", 
+               inputDate="Documents/hackathon_2020/mist_4/date_v4.tsv", 
                estimateRoot = "l",
                constraint = TRUE,
                outFile = "Documents/hackathon_2020/mist_4/rlsd2/lsdresults2", seqLen=34079)
+
+
+
+
 

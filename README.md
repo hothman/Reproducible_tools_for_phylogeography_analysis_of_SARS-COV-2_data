@@ -1,1 +1,1 @@
-# Reproducible_tools_for_phylogeography_analysis_of_SARS-COV-2_data
+# PhyGeCov
